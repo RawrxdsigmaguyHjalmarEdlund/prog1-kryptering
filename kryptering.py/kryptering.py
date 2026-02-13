@@ -1,7 +1,3 @@
-alfabet = "abcdefghijklmnopqrstuvwxyzåäö"
-meddelande = "hej"
-nyckel = 1
-alfabetl=list(alfabet)
-meddelandel=list(meddelande)
-for i in range(len(meddelandel)):
-    print(alfabet[alfabetl.index(meddelandel[i])+nyckel])
+meddelande = input("Skriv ditt meddelande!! ")
+for i in range(len(list(meddelande))):
+    print("abcdefghijklmnopqrstuvwxyzåäö"[(list("abcdefghijklmnopqrstuvwxyzåäö").index(list(meddelande)[i])+60) % len("abcdefghijklmnopqrstuvwxyzåäö")])
